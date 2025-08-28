@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "oneClick_downloader",
+  "description": "Downloads YouTube videos with a single button click",
+  "version": "1.0",
+  "icons": {
+    "16": "images/yt_d_icon"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "https://www.youtube.com/"
+      ]
+    }
+  ]
+}
